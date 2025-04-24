@@ -1,0 +1,67 @@
+[
+    {
+      "name": "Smartphone XYZ",
+      "sku": "123456",
+      "images": [
+        "https://img.freepik.com/premium-psd/black-smartphone-mockup-your-design_34168-2405.jpg",
+        "https://img.freepik.com/free-psd/full-screen-smartphone-mockup-design_53876-65968.jpg"
+      ],
+      "price": 299.99,
+      "description": "A great smartphone with amazing features.",
+      "availableQty": 50,
+      "category": "electronics",
+      "sellerInfo": "BestSeller Inc."
+    },
+    {
+      "name": "Sports Shoes ABC",
+      "sku": "789012",
+      "images": [
+        "https://img.freepik.com/free-photo/pair-trainers_144627-3799.jpg",
+        "https://img.freepik.com/free-vector/sport-shoes-sneakers-set_74855-313.jpg"
+      ],
+      "price": 120.0,
+      "description": "Comfortable and durable sports shoes.",
+      "availableQty": 100,
+      "category": "sports",
+      "sellerInfo": "SportsHub Ltd."
+    },
+    {
+      "name": "Fashionable Jacket",
+      "sku": "345678",
+      "images": [
+        "https://img.freepik.com/free-photo/still-life-rendering-jackets-display_23-2149745031.jpg",
+        "https://img.freepik.com/free-photo/still-life-rendering-jackets-display_23-2149745027.jpg"
+      ],
+      "price": 150.5,
+      "description": "Stylish and warm jacket for winter.",
+      "availableQty": 30,
+      "category": "fashion",
+      "sellerInfo": "FashionWorld Co."
+    },
+    {
+      "name": "4K Ultra HD TV",
+      "sku": "901234",
+      "images": [
+        "https://images.unsplash.com/photo-1560135468-8efb4980d8c0",
+        "https://images.unsplash.com/photo-1593642634371-8b54af262d38"
+      ],
+      "price": 799.99,
+      "description": "Experience movies and shows in stunning 4K resolution.",
+      "availableQty": 20,
+      "category": "electronics",
+      "sellerInfo": "HomeElectronics LLC."
+    },
+    {
+      "name": "Mountain Bike",
+      "sku": "567890",
+      "images": [
+        "https://images.unsplash.com/photo-1579389083078-2538589f0726",
+        "https://images.unsplash.com/photo-1503341455253-b2e723bb3db3"
+      ],
+      "price": 450.75,
+      "description": "Durable mountain bike for all terrains.",
+      "availableQty": 15,
+      "category": "sports",
+      "sellerInfo": "BikeStore Inc."
+    }
+  ]
