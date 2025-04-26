@@ -87,7 +87,7 @@ const ProductListing = () => {
 
           )}
           <div className='container mt-4'>
-          {products.map((product, index) => (
+          {products.map((product, index ) => (
            userInfo.userType === "seller" ? (
             <Product key={product.sku} {...product} animDelay={index * 200} />
            ) : (

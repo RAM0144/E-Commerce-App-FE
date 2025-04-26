@@ -18,7 +18,7 @@ const accountReducer = (state = initialState, action) => {
           case "account_logout" :
             return {
                 ...state,
-                authenticated: true,
+                authenticated: false,
                 userInfo: null
             }  
            default:

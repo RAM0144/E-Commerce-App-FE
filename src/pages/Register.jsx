@@ -101,7 +101,7 @@ const Register = () => {
               required
             >
               <option value="customer">Customer</option>
-              <option value="seller">Seller</option>
+              <option value="admin">Seller</option>
             </select>
           </div>
           {formData.userType === "seller" && (

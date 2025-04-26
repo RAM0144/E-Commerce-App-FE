@@ -43,7 +43,7 @@ function App() {
         <Provider store={store}>
           <Router>
           <Routes>
-          <Route path='' element={<Layout/>}>
+          <Route path="" element={<Layout/>}>
           <Route path="/" element={<ProtectedComponent component={<ProductListing />} />} />
           <Route path="/cart" element={<ProtectedComponent component={<Cart />} />} />
           <Route path="/products/:productSku" element={<ProtectedComponent component={<ProductInfo />} />} />
@@ -59,3 +59,4 @@ function App() {
 }
 
 export default App
+
