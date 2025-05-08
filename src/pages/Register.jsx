@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { handledAPIPost } from "../apis/apis.js";
 
 const initialState = {
@@ -14,6 +14,7 @@ const initialState = {
 
 const Register = () => {
 
+     const navigate = useNavigate()
      
      const [formData, setFormData] = useState(initialState);
 
@@ -33,8 +34,8 @@ const Register = () => {
         } catch (error) {
             alert(error.message);
         }
-        
         setFormData(initialState);
+        navigate("/login")
      };
 
 
@@ -101,7 +102,7 @@ const Register = () => {
               required
             >
               <option value="customer">Customer</option>
-              <option value="admin">Seller</option>
+              <option value="seller">Seller</option>
             </select>
           </div>
           {formData.userType === "seller" && (

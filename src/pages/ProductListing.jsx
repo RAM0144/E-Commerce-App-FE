@@ -41,6 +41,7 @@ const ProductListing = () => {
     const [openForm, setOpenForm] = useState();
 
     const [products, setProdects] = useState([]);
+    
 
     const loadProducts = async () => {
        try {
@@ -89,7 +90,9 @@ const ProductListing = () => {
           <div className='container mt-4'>
           {products.map((product, index ) => (
            userInfo.userType === "seller" ? (
-            <Product key={product.sku} {...product} animDelay={index * 200} />
+            <Product key={product.sku} {...product} animDelay={index * 200} 
+            
+            />
            ) : (
             <Link key={product.sku} to={`/products/${product.sku}`}>
             <Product {...product} animDelay={index * 200}/>

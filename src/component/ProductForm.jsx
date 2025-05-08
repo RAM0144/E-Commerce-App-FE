@@ -11,7 +11,7 @@ const ProductForm = () => {
     availableQty: "",
     category: "electronics",
   });
-
+  
   const [errors, setErrors] = useState({
     name: "",
     sku: "",
@@ -21,6 +21,12 @@ const ProductForm = () => {
     availableQty: "",
     category: "electronics",
   });
+
+  // const [editId, setEdit] = useState()
+
+  // const loadEditProduct = ()=> {
+    
+  // }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,29 +40,34 @@ const ProductForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (product.name === "") {
-      setErrors({
-        ...errors,
-        name: "This is required",
-      });
-    } else {
-      // Convert images from a comma-separated string to an array
-      const productData = {
-        ...product,
-        images: product.images.split(",").map((img) => img.trim()),
-      };
-
-      await handledAPIPost("/products", productData);
- 
-      setProduct({
-        name: "",
-        sku: "",
-        price: "",
-        description: "",
-        images: "",
-        availableQty: "",
-        category: "electronics",
-      });
+    try {
+      if (product.name === "") {
+        setErrors({
+          ...errors,
+          name: "This is required",
+        });
+      } else {
+        // Convert images from a comma-separated string to an array
+        const productData = {
+          ...product,
+          images: product.images.split(",").map((img) => img.trim()),
+        };
+  
+        await handledAPIPost("/products", productData);
+   
+        setProduct({
+          name: "",
+          sku: "",
+          price: "",
+          description: "",
+          images: "",
+          availableQty: "",
+          category: "electronics",
+        });
+      }
+    } catch (error) {
+      alert('Sorry..! Only a seller can add new Product')
+      console.log("Only a seller can do the action", error)
     }
   };
 

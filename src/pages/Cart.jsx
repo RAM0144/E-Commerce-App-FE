@@ -21,7 +21,7 @@ const Cart = () => {
       alert(response.msg);
       dispatch({ type: "cart_clear" });
       } catch (error) {
-        alert("Something went wrong, please try again later");
+        alert("Something went wrong, please try again later", error);
       } finally {
         setLoading(false);
       }
