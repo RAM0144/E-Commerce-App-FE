@@ -23,7 +23,8 @@ const Product = ({ name, sku, images, price, description, availableQty, category
                  qty ,
                 },
               });
-            };
+              
+  };
 
   return (
     <div className="card mb-4 d-inline-block">

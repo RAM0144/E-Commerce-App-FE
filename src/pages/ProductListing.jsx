@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { handledAPIGet } from '../apis/apis.js';
